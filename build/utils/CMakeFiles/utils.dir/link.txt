@@ -1,2 +1,0 @@
-C:\Qt\Tools\mingw482_32\bin\ar.exe cq libutils.a  CMakeFiles/utils.dir/Dummy.cpp.obj
-C:\Qt\Tools\mingw482_32\bin\ranlib.exe libutils.a

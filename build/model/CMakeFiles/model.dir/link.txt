@@ -1,2 +1,0 @@
-C:\Qt\Tools\mingw482_32\bin\ar.exe cq libmodel.a  CMakeFiles/model.dir/Model.cpp.obj
-C:\Qt\Tools\mingw482_32\bin\ranlib.exe libmodel.a
