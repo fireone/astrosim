@@ -1,2 +1,0 @@
-C:\Qt\Tools\mingw482_32\bin\ar.exe cq libgame.a  CMakeFiles/game.dir/Game.cpp.obj
-C:\Qt\Tools\mingw482_32\bin\ranlib.exe libgame.a

@@ -1,2 +1,0 @@
-C:\Qt\Tools\mingw482_32\bin\ar.exe cq libview.a  CMakeFiles/view.dir/View.cpp.obj
-C:\Qt\Tools\mingw482_32\bin\ranlib.exe libview.a
