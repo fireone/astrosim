@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="model" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\utils\;CMake Files\model\;CMake Files\view\;CMake Files\game\;CMake Files\main\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="model">
+         <Option output="C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/libmodel.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/Qt/Tools/mingw482_32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/include" />
+            <Add directory="C:/Qt/Tools/mingw482_32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/include" />
+            <Add directory="C:/Qt/Tools/mingw482_32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/include-fixed" />
+            <Add directory="C:/Qt/Tools/mingw482_32/lib/gcc/../../i686-w64-mingw32/include/c++" />
+            <Add directory="C:/Qt/Tools/mingw482_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward" />
+            <Add directory="C:/Qt/Tools/mingw482_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
+            <Add directory="C:/Users/linusgo/Desktop/pi/dev/astrosim/model/.." />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 model" />
+            <CompileFile command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="model/fast">
+         <Option output="C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/libmodel.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="C:/Qt/Tools/mingw482_32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/include" />
+            <Add directory="C:/Qt/Tools/mingw482_32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/include" />
+            <Add directory="C:/Qt/Tools/mingw482_32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/include-fixed" />
+            <Add directory="C:/Qt/Tools/mingw482_32/lib/gcc/../../i686-w64-mingw32/include/c++" />
+            <Add directory="C:/Qt/Tools/mingw482_32/lib/gcc/../../i686-w64-mingw32/include/c++/backward" />
+            <Add directory="C:/Qt/Tools/mingw482_32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32" />
+            <Add directory="C:/Users/linusgo/Desktop/pi/dev/astrosim/model/.." />
+         </Compiler>
+         <MakeCommands>
+            <Build command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 model/fast" />
+            <CompileFile command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="C:/Qt/Tools/mingw482_32/bin/mingw32-make.exe -f &quot;C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/model/Model.cpp">
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/model/Model.h">
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/utils/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\utils\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/utils/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\utils\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/model/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\model\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/model/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\model\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/view/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\view\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/view/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\view\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/game/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\game\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/game/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\game\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/main/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\main\" />
+      </Unit>
+      <Unit filename="C:/Users/linusgo/Desktop/pi/dev/astrosim/main/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\main\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

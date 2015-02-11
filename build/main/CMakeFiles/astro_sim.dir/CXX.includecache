@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../game/../game/Game.h
+memory
+-
+model/Model.h
+../game/../game/model/Model.h
+view/View.h
+../game/../game/view/View.h
+
+../game/../model/Model.h
+utils/IObservable.h
+../game/../model/utils/IObservable.h
+
+../game/../utils/IObservable.h
+IObserver.h
+../game/../utils/IObserver.h
+
+../game/../utils/IObserver.h
+
+../game/../view/View.h
+utils/IObserver.h
+../game/../view/utils/IObserver.h
+
+C:/Users/linusgo/Desktop/pi/dev/astrosim/main/main.cpp
+game/Game.h
+C:/Users/linusgo/Desktop/pi/dev/astrosim/main/game/Game.h
+

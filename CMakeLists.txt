@@ -1,0 +1,7 @@
+cmake_minimum_required (VERSION 2.8.11)
+project (astro_sim)
+add_subdirectory (utils)
+add_subdirectory (model)
+add_subdirectory (view)
+add_subdirectory (game)
+add_subdirectory (main)

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../model/../utils/IObservable.h
+IObserver.h
+../model/../utils/IObserver.h
+
+../model/../utils/IObserver.h
+
+C:/Users/linusgo/Desktop/pi/dev/astrosim/model/Model.cpp
+Model.h
+C:/Users/linusgo/Desktop/pi/dev/astrosim/model/Model.h
+
+C:/Users/linusgo/Desktop/pi/dev/astrosim/model/Model.h
+utils/IObservable.h
+C:/Users/linusgo/Desktop/pi/dev/astrosim/model/utils/IObservable.h
+

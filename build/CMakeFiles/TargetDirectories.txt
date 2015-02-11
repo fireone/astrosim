@@ -1,0 +1,5 @@
+C:/Users/linusgo/Desktop/pi/dev/astrosim/build/model/CMakeFiles/model.dir
+C:/Users/linusgo/Desktop/pi/dev/astrosim/build/utils/CMakeFiles/utils.dir
+C:/Users/linusgo/Desktop/pi/dev/astrosim/build/view/CMakeFiles/view.dir
+C:/Users/linusgo/Desktop/pi/dev/astrosim/build/game/CMakeFiles/game.dir
+C:/Users/linusgo/Desktop/pi/dev/astrosim/build/main/CMakeFiles/astro_sim.dir
