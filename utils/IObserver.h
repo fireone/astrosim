@@ -10,7 +10,7 @@ public:
 
     virtual ~IObserver(){}
 
-    virtual void update() = 0;
+    virtual void notify() = 0;
 };
 
 }
