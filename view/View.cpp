@@ -84,11 +84,11 @@ void View::setupView()
 
         // create the window and renderer
         // note that the renderer is accelerated
-        m_pWin = SDL_CreateWindow("Image Loading", 100, 100, WIDTH, HEIGHT, 0);
+        m_pWin = SDL_CreateWindow("Image Loading", 0, 0, WIDTH, HEIGHT, 0);
         m_pRenderer = SDL_CreateRenderer(m_pWin, -1, SDL_RENDERER_ACCELERATED);
 
         // load our image
-        m_pImg = IMG_LoadTexture(m_pRenderer, "c:\\dev\\ship.png");
+        m_pImg = IMG_LoadTexture(m_pRenderer, "../../resources/ship.png");
 
         int w, h;
 
