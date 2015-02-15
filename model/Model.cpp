@@ -6,7 +6,7 @@ namespace model
 
 Model::Model()
 : m_observers()
-, m_ships()
+, m_actors()
 , m_commands()
 {
 }
@@ -16,9 +16,9 @@ void Model::addObserver( Utl::IObserver *pObserver )
     m_observers.push_back( pObserver );
 }
 
-void Model::addShip( IShip *pShip )
+void Model::addActor( IActor *pActor )
 {
-    m_ships.push_back( IShipSP( pShip ) );
+    m_actors.push_back( IActorSP( pActor ) );
 }
 
 bool Model::isRunning()
@@ -40,14 +40,9 @@ void Model::update( double diff )
 
     Environment env;
 
-    for( IShipSP ship : m_ships )
+    for( IActorSP actor : m_actors )
     {
-        m_commands.push_back( make_pair( ship->requestCmd( env ), ship ) );
-    }
-
-    for( pair<Command, IShipSP> cmdPair : m_commands )
-    {
-
+        actor->update( diff );
     }
 }
 

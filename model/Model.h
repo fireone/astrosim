@@ -4,13 +4,15 @@
 #include <vector>
 #include <utility>
 #include "utils/IObservable.h"
-#include "IShip.h"
-#include "Command.h"
+#include "AI.h"
+#include "IActor.h"
+#include "command/Command.h"
 
 namespace model
 {
 
 namespace Utl = ::utils;
+namespace Cmd = ::command;
 
 class Model : public Utl::IObservable
 {
@@ -24,9 +26,7 @@ public:
     //! Add an observer to the model
     void addObserver( Utl::IObserver *pObserver );
 
-    //! Add a ship to the model.
-    //! Ownership assumed.
-    void addShip( IShip* pShip );
+    void addActor( IActor* pActor );
 
     bool isRunning();
 
@@ -34,9 +34,9 @@ private:
 
     ::std::vector<Utl::IObserver*> m_observers;
 
-    ::std::vector<IShipSP> m_ships;
+    ::std::vector<IActorSP> m_actors;
 
-    ::std::vector<::std::pair<Command, IShipSP>> m_commands;
+    ::std::vector<::std::pair<Cmd::Command, IActorSP>> m_commands;
 
     void notify();
 
