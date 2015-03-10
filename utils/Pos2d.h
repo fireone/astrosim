@@ -7,7 +7,10 @@ namespace utils
 class Pos2d
 {
 public:
+
     Pos2d();
+
+    Pos2d( double x, double y );
 
     double getX() const;
 

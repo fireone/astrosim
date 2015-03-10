@@ -12,7 +12,7 @@ enum constants
 
 Game::Game()
 : m_apModel( new Mdl::Model )
-, m_apView( new Vw::View )
+, m_apView( new Vw::View( 800, 600 ) )
 {
     m_apModel->addObserver( m_apView.get() );
 }

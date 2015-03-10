@@ -3,11 +3,9 @@
 namespace model
 {
 
-AbstractActor::AbstractActor( long       id,
-                              Utl::Pos2d pos,
-                              double     rot )
-: m_id( id )
-, m_pos ( pos )
+AbstractActor::AbstractActor(long id, utils::Pos2d pos, double rot)
+: m_id( id)
+, m_pos( pos )
 , m_rot( rot )
 {
 }

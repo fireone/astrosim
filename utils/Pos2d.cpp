@@ -9,6 +9,12 @@ Pos2d::Pos2d()
 {
 }
 
+Pos2d::Pos2d(double x, double y)
+: m_x( x )
+, m_y( y )
+{
+}
+
 double Pos2d::getX() const
 {
     return m_x;

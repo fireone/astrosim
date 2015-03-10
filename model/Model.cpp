@@ -1,5 +1,6 @@
 #include "Model.h"
 #include "Environment.h"
+#include "Ship.h"
 
 namespace model
 {
@@ -7,7 +8,6 @@ namespace model
 Model::Model()
 : m_observers()
 , m_actors()
-, m_commands()
 {
 }
 
@@ -16,9 +16,13 @@ void Model::addObserver( Utl::IObserver *pObserver )
     m_observers.push_back( pObserver );
 }
 
-void Model::addActor( IActor *pActor )
+void Model::addShip( double x, double y, double rot )
 {
-    m_actors.push_back( IActorSP( pActor ) );
+    IActorSP spActor( new Ship( getId(), Utl::Pos2d( x, y ), rot ) );
+
+    m_actors.push_back( spActor );
+
+    notify( spActor, Utl::NEW_SHIP );
 }
 
 bool Model::isRunning()
@@ -26,12 +30,19 @@ bool Model::isRunning()
     return true;
 }
 
-void Model::notify()
+void Model::notify( const IActorSP& spActor, Utl::Event event )
 {
     for( Utl::IObserver* pObserver : m_observers )
     {
-        pObserver->notify();
+        pObserver->notify( spActor, event );
     }
+}
+
+long Model::getId()
+{
+    static long id( 0 );
+
+    return ++id;
 }
 
 void Model::update( double diff )

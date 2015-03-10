@@ -7,6 +7,7 @@
 #include "AI.h"
 #include "IActor.h"
 #include "command/Command.h"
+#include "utils/Event.h"
 
 namespace model
 {
@@ -21,12 +22,12 @@ public:
     Model();
 
     //! Updates the model
-    void update(double diff);
+    void update( double diff );
 
     //! Add an observer to the model
     void addObserver( Utl::IObserver *pObserver );
 
-    void addActor( IActor* pActor );
+    void addShip( double x, double y, double rot );
 
     bool isRunning();
 
@@ -36,9 +37,9 @@ private:
 
     ::std::vector<IActorSP> m_actors;
 
-    ::std::vector<::std::pair<Cmd::Command, IActorSP>> m_commands;
+    void notify( const IActorSP& spActor, Utl::Event event );
 
-    void notify();
+    long getId();
 
 };
 

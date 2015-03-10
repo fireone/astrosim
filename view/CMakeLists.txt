@@ -5,6 +5,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 add_library(${PROJECT_NAME} STATIC ${SRC_LIST}
    View.h
    View.cpp
+   IDrawable.h
+   ShipDrawable.h
+   ShipDrawable.cpp
 )
 
 target_include_directories( ${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/..

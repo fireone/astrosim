@@ -7,6 +7,7 @@ add_library( ${PROJECT_NAME} STATIC ${SRC_LIST}
    IObserver.h
    Pos2d.h
    Pos2d.cpp
+   Event.h
 )
 
 target_include_directories( ${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/.. )

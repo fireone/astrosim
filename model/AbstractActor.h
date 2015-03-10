@@ -1,8 +1,7 @@
-#ifndef _MODEL_ABSTRACT_ACTOR_H_
-#define _MODEL_ABSTRACT_ACTOR_H_
+#ifndef _MODEL_ABSTRACTACTOR_H
+#define _MODEL_ABSTRACTACTOR_H
 
 #include "IActor.h"
-#include "utils/Pos2d.h"
 
 namespace model
 {
@@ -12,10 +11,7 @@ namespace Utl = ::utils;
 class AbstractActor : public IActor
 {
 public:
-
-    AbstractActor( long               id,
-                   Utl::Pos2d         pos,
-                   double             rot );
+    AbstractActor( long id, Utl::Pos2d pos, double rot );
 
     long getId() const;
 
@@ -34,4 +30,4 @@ protected:
 
 }
 
-#endif // _MODEL_ABSTRACT_ACTOR_H_
+#endif // _MODEL_ABSTRACTACTOR_H

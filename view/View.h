@@ -3,33 +3,39 @@
 
 #include "SDL2/SDL.h"
 #include "utils/IObserver.h"
+#include "IDrawable.h"
+#include <vector>
+#include "model/IActor.h"
 
 namespace view
 {
 
 namespace Utl = ::utils;
+namespace Mdl = ::model;
 
 class View : public Utl::IObserver
 {
 public:
 
-    View();
+    View( int width, int height );
 
     ~View();
 
     void update();
 
-    void notify();
+    void notify( const Mdl::IActorSP spActor, Utl::Event event );
 
 private:
 
     SDL_Window* m_pWin;
+
     SDL_Renderer* m_pRenderer;
-    SDL_Texture* m_pImg;
 
-    SDL_Rect texr;
+    ::std::vector<IDrawableSP> m_drawables;
 
-    void setupView();
+    void setupView( int width, int height );
+
+    void addShip( const Mdl::IActorSP& spActor );
 };
 
 }
