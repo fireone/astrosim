@@ -25,4 +25,14 @@ double Pos2d::getY() const
     return m_y;
 }
 
+void Pos2d::moveX( double x )
+{
+    m_x += x;
+}
+
+void Pos2d::moveY( double y )
+{
+    m_y += y;
+}
+
 }

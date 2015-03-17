@@ -1,13 +1,16 @@
 #include "Model.h"
 #include "Environment.h"
 #include "Ship.h"
+#include "SimpleCommandGenerator.h"
 
 namespace model
 {
 
-Model::Model()
+Model::Model( double worldWidth, double worldHeight )
 : m_observers()
 , m_actors()
+, m_worldWidth( worldWidth )
+, m_worldHeight( worldHeight )
 {
 }
 
@@ -18,7 +21,7 @@ void Model::addObserver( Utl::IObserver *pObserver )
 
 void Model::addShip( double x, double y, double rot )
 {
-    IActorSP spActor( new Ship( getId(), Utl::Pos2d( x, y ), rot ) );
+    IActorSP spActor( new Ship( getId(), Utl::Pos2d( x, y ), rot, new SimpleCommandGenerator ) );
 
     m_actors.push_back( spActor );
 

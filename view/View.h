@@ -17,7 +17,7 @@ class View : public Utl::IObserver
 {
 public:
 
-    View( int width, int height );
+    View(int width, int height , const char *name);
 
     ~View();
 
@@ -33,7 +33,7 @@ private:
 
     ::std::vector<IDrawableSP> m_drawables;
 
-    void setupView( int width, int height );
+    void setupView(int width, int height , const char *name);
 
     void addShip( const Mdl::IActorSP& spActor );
 };

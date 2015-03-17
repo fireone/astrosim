@@ -13,7 +13,6 @@ Asteroid::Asteroid( long id, utils::Pos2d pos, double rot )
 
 void Asteroid::update( double diff )
 {
-
 }
 
 }

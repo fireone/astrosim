@@ -16,6 +16,10 @@ public:
 
     double getY() const;
 
+    void moveX( double x );
+
+    void moveY( double y );
+
 private:
     double m_x;
 

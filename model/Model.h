@@ -19,7 +19,7 @@ class Model : public Utl::IObservable
 {
 public:
 
-    Model();
+    Model( double worldWidth, double worldHeight );
 
     //! Updates the model
     void update( double diff );
@@ -36,6 +36,10 @@ private:
     ::std::vector<Utl::IObserver*> m_observers;
 
     ::std::vector<IActorSP> m_actors;
+
+    const double m_worldWidth;
+
+    const double m_worldHeight;
 
     void notify( const IActorSP& spActor, Utl::Event event );
 

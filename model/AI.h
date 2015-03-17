@@ -9,7 +9,7 @@ namespace model
 class AI : public ICommandGenerator
 {
 public:
-    Cmd::Command requestCmd( const Environment &env );
+    Cmd::Command requestCmd();
 };
 
 }

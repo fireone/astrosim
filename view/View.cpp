@@ -10,12 +10,12 @@ namespace view
 using namespace Mdl;
 using namespace Utl;
 
-View::View( int width, int height )
+View::View( int width, int height, const char* name )
 : m_pWin( nullptr )
 , m_pRenderer( nullptr )
 , m_drawables()
 {
-    setupView( width, height );
+    setupView( width, height, name );
 }
 
 View::~View()
@@ -64,14 +64,14 @@ void View::notify( const IActorSP spActor, Event event )
     }
 }
 
-void View::setupView( int width, int height )
+void View::setupView( int width, int height, const char* name )
 {
     if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {
         exit( 1 );
     }
 
-    m_pWin = SDL_CreateWindow( "Astro Sim", 50, 50, width, height, 0 );
+    m_pWin = SDL_CreateWindow( name, 50, 50, width, height, 0 );
 
     m_pRenderer = SDL_CreateRenderer( m_pWin, -1, SDL_RENDERER_ACCELERATED );
 }

@@ -17,6 +17,8 @@ add_library( ${PROJECT_NAME} STATIC ${SRC_LIST}
    ICommandGenerator.h
    Ship.h
    Ship.cpp
+   SimpleCommandGenerator.h
+   SimpleCommandGenerator.cpp
 )
 
 target_include_directories( ${PROJECT_NAME} PUBLIC

@@ -8,6 +8,7 @@ add_executable( astro_sim main.cpp )
 target_link_libraries( astro_sim LINK_PUBLIC game )
 target_link_libraries( astro_sim LINK_PUBLIC view )
 target_link_libraries( astro_sim LINK_PUBLIC model )
+target_link_libraries( astro_sim LINK_PUBLIC command )
 target_link_libraries( astro_sim LINK_PUBLIC utils )
 
 #needed by SDL2

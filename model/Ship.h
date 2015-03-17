@@ -2,6 +2,7 @@
 #define _MODEL_SHIP_H
 
 #include "AbstractActor.h"
+#include "ICommandGenerator.h"
 
 namespace model
 {
@@ -12,9 +13,13 @@ class Ship : public AbstractActor
 {
 public:
 
-    Ship( long id, Utl::Pos2d pos, double rot );
+    Ship( long id, Utl::Pos2d pos, double rot, ICommandGenerator* pCmdGenerator );
 
     void update( double diff );
+
+private:
+
+    ::std::auto_ptr<ICommandGenerator> m_apCmdGenerator;
 };
 
 }
